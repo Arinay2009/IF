@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrity Federation - About</title>
+    <style>
+        * {
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .banner {
+            display: flex;
+            justify-content: center;
+            height: 2.2vw;
+            background-color: black;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: medium;
+            margin-bottom: 11vh;
+        }
+
+        .banner p {
+            position: relative;
+            top: 0.6vw;
+            font-size: 0.75vw;
+        }
+
+        .left {
+            padding-left: 2vw;
+            display: flex;
+            height: 10vh;
+            width: 25vw;
+            justify-content: space-evenly;
+            top: 10vh;
+
+        }
+
+        .left a {
+            font-size: 0.68vw;
+            text-decoration: none;
+            color: black;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            z-index: 10;
+            font-weight: bolder;
+        }
+
+        .right {
+            display: flex;
+            justify-content: space-evenly;
+            width: 13vw;
+            height: 10vh;
+        }
+        .right img{
+            height: 4vh;
+            position: relative;
+            bottom: 0.3vh;
+        }
+        .right i{
+            font-size: 1.3vw;
+        }
+        .right p{
+            padding-top: 0.5vh;
+            padding-right: 1vw;
+            font-size: 0.6vw;
+            font-weight: bolder;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        nav{
+            position: fixed;
+            top: 7vh;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo h1 {
+            font-family: cursive;
+            position: absolute;
+            top: 6vh;
+            font-size: 1.6vw;
+        }
+        .section1 {
+            display: flex;
+            justify-content: center;
+            height: 44vh;
+        }
+
+        .section1 .img {
+            width: 54vw;
+            background-image: url(image3.png);
+            margin-left: 0;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .section1 .content {
+            width: 60vw;
+        }
+
+        .section1 .content h1 {
+            font-family: 'Indie Flower', cursive;
+            position: relative;
+            top: 18vh;
+            text-align: center;
+        }
+
+        .section1 .content h3 {
+            font-family: 'Dancing Script', cursive;
+            position: relative;
+            left: 11vw;
+            top: 19vh;
+            text-align: center;
+        }
+
+        .section1 .content p {
+            font-family: 'Amatic SC', cursive;
+            position: relative;
+            top: 22vh;
+            font-size: 0.9vw;
+            text-align: center;
+        }
+
+        .section1 .content button {
+            position: relative;
+            display: flex;
+            font-family: 'Bebas Neue', cursive;
+            color: black;
+            top: 305px;
+            font-size: 50px;
+            background: white;
+            border: black solid;
+            cursor: pointer;
+            align-self: center;
+            align-items: center;
+            left: 42%;
+        }
+
+        .section1 .content button:hover {
+            background-color: black;
+            border: black;
+            color: white;
+        }
+        .section2 {
+            display: flex;
+            justify-content: center;
+            height: 43vh;
+        }
+
+        .section2 .img {
+            width: 54vw;
+            background-image: url(image5.jpeg);
+            margin-left: 0;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .section2 .content {
+            width: 60vw;
+        }
+
+        .section2 .content h1 {
+            font-family: 'Indie Flower', cursive;
+            position: relative;
+            top: 18vh;
+            text-align: center;
+        }
+
+        .section2 .content h3 {
+            font-family: 'Dancing Script', cursive;
+            position: relative;
+            left: 11vw;
+            top: 19vh;
+            text-align: center;
+        }
+
+        .section2 .content p {
+            font-family: 'Amatic SC', cursive;
+            position: relative;
+            top: 22vh;
+            font-size: 0.9vw;
+            text-align: center;
+        }
+
+
+        .section2 .content button:hover {
+            background-color: black;
+            border: black;
+            color: white;
+        }
+        .section9 {
+            height: 500px;
+            background-color: black;
+        }
+
+        .adressandstuff {
+            position: relative;
+            top: 100px;
+            left: 24%;
+            width: 1000px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .adressandstuff h3 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+        }
+
+        .adressandstuff p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+        }
+
+        .adressandstuff input {
+            height: 30px;
+            background-color: black;
+            border: white solid;
+
+        }
+
+        .adressandstuff h2 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            padding-bottom: 10px;
+            color: white;
+        }
+
+        ::placeholder {
+            padding-left: 2px;
+            color: white;
+            opacity: 1;
+            font-family:Arial, Helvetica, sans-serif
+        }
+        .extrastuff{
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            top: 200px;
+            left: 19%;
+            width: 1200px;
+        }
+        .extrastuff h3{
+            color: white;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .extrastuff i{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+        <div class="banner">
+            <p>Head over to our thread in politics for further information</p>
+        </div>
+        <nav>
+            <div class="left">
+                <a href="index.html">Home</a>
+                <a href="what-we-do.html">What we do</a>
+            </div>
+            <div class="right">
+                <i class="fas fa-user-circle fa-2x"></i>
+                <img src="image.png" alt="">
+                <i class="fab fa-facebook fa-2x"></i>
+                <i class="fab fa-twitter fa-2x"></i>
+                <i class="fab fa-instagram-square fa-2x"></i>
+            </div>
+        </nav>
+        <div class="logo">
+            <h1>Integrity Federation</h1>
+        </div>
+        <div class="section1">
+            <div class="img">
+            </div>
+            <div class="content">
+                <h1>History</h1>
+                <p>Integrity Federation was founded by Polak. Founding members were Jawad, Chris,Gabe,Jordan Lim,Zhok,Devsur and Knight.</p>
+            </div>
+        </div>
+        <div class="section2">
+            
+            <div class="content">
+                <h1>Information</h1>
+                <p>The current members of IF are Polak, Jawad, Aciel, Knight, Gabe, Eddie, Chris,Anos, Jordan and Heinrich. <br> We have been in office for the last 3 terms which shows the trust we have built through our honest work.
+                </p>
+            </div>
+            <div class="img">
+            </div>
+        </div>
+        <div class="section9">
+            <div class="adressandstuff">
+                <div class="adress">
+                    <h3>ADRESS</h3>
+                    <p>Polak Central,
+                        <br>
+                        Poland
+                    </p>
+                </div>
+                <div class="contact">
+                    <h3>CONTACT</h3>
+                    <p>polakcentral@IF.com
+                    </p>
+                </div>
+                <div class="mailing_list">
+                    <h2>Learn about our initiatives</h2>
+                    <input type="email" name="" id="" placeholder="Enter your Email here*">
+                </div>
+            </div>
+       
+            <div class="extrastuff">
+                <h3>©2024 By Eddie. Proudly created by me</h3>
+                <div class="socials">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram-square"></i>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
